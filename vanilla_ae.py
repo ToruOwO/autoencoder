@@ -81,11 +81,11 @@ for epoch in range(num_epochs):
 
 		if i % log_per_iter == 0:
 			print('Epoch [%d/%d], Iter [%d/%d] Loss: %.4f'
-			      % (epoch + 1, num_epochs, i + 1, len(dataset) // batch_size, loss.data[0]))
+			      % (epoch + 1, num_epochs, i + 1, len(dataset) // batch_size, loss.item()))
 
 	# save images for debugging
 	if epoch % log_per_epoch == 0:
-		original = img.view(input_size, 1, 28, 28)
-		reconst = output.view(input_size, 1, 28, 28)
+		original = img.view(img.size(0), 1, 28, 28)
+		reconst = output.view(output.size(0), 1, 28, 28)
 		torchvision.utils.save_image(original.data.cpu(), output_dir + '/img_{}.png'.format(epoch))
 		torchvision.utils.save_image(reconst.data.cpu(), output_dir + '/img_{}_reconst.png'.format(epoch))
