@@ -1,3 +1,5 @@
+import os
+
 import torch
 import torch.nn as nn
 import torchvision
@@ -25,6 +27,9 @@ dataset = datasets.MNIST(root=data_dir,
 dataloader = torch.utils.data.DataLoader(dataset=dataset,
                                          batch_size=batch_size,
                                          shuffle=True)
+
+output_dir = output_dir + '/vanilla_ae'
+os.system('mkdir -p ' + output_dir)
 
 
 class AutoEncoder(nn.Module):
