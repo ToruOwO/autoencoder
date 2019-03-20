@@ -70,4 +70,4 @@ Implementation
 
 * Vanilla autoencoder
 
-    python vanilla_ae.py
+    ```python vanilla_ae.py```
