@@ -22,8 +22,13 @@ noise from the input and helps the network learn more useful features.
 (In fact, simple autoencoder often ends up learning a low-dimensional representation very
 similar to PCA's.)
 
+**Reference**
+
 *G. E. Hinton and R. R. Salakhutdinov. Reducing the dimensionality of data with neural networks. Science,
 313(5786):504–507, 2006.* [[paper]](https://www.cs.toronto.edu/~hinton/science.pdf)
+
+*I. Goodfellow, Y. Bengio and A. Courville. Deep learning.
+MIT Press (www.deeplearningbook.org), 2016.* [[Chapter 14. autoencoder]](https://www.deeplearningbook.org/contents/autoencoders.html)
 
 Variations
 ----------
