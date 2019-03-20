@@ -64,3 +64,10 @@ Variations
     1. Loss function = reconstruction loss (measures different the reconstructed data is from the original data)
        \+ KL-divergence (a regularizer that encourages the posterior to match the prior)
     2. The reparameterization trick
+
+Implementation
+--------------
+
+* Vanilla autoencoder
+
+    python vanilla_ae.py
