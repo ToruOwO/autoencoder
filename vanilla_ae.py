@@ -79,7 +79,7 @@ for epoch in range(num_epochs):
 		loss.backward()
 		optimizer.step()
 
-		if i % log_per_iter == 0:
+		if (i + 1) % log_per_iter == 0:
 			print('Epoch [%d/%d], Iter [%d/%d] Loss: %.4f'
 			      % (epoch + 1, num_epochs, i + 1, len(dataset) // batch_size, loss.item()))
 
