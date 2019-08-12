@@ -71,3 +71,7 @@ Implementation
 * Vanilla autoencoder
 
     ```python vanilla_ae.py```
+
+* Variational autoencoder
+
+    ```python vae.py```
